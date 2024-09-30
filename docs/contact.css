@@ -8,6 +8,10 @@ html, body {
     display: flex;
     flex-direction: column;
 }
+h1{
+    display: flex;
+    justify-content: center;
+}
 h2{
     display: none;
 }
