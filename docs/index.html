@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFCD</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="libraries/aos.css">
+</head>
+<body data-aos="fade-up">
+    <header>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar" id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="over.html">Over Ons</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+           
+            <h2>Home</h2>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welkom op de officiële website van NFCD</h1>
+            <p>Needforcardetailing, Het detail bedrijf dat uw wagen nodig heeft.</p>
+            <a href="over.html" class="btn">Lees hier meer</a>
+        </section>
+    </main>
+
+    <footer data-aos="fade-up">
+    
+        <p>&copy; 2024 NeedForCarDetailing.</p>
+        <br>
+        <a href="https://www.instagram.com/needforcardetailing/" target="_blank"></a>
+            <img src="images/insta.png" alt="Instagram Logo" style="width: 30px; height: 30px;">
+        </a>
+    </footer>
+
+    <script src="libraries/aos.js"></script>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+    
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

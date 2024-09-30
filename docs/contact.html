@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact NFCD</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="libraries/aos.css">
+</head>
+
+<body data-aos="fade-up">
+    <header>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="over.html">Over Ons</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <h2>Contact</h2>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-info">
+                <h1>Contactgegevens</h1>
+                <p><strong>Locatie:</strong> Regio Mechelen (Zie kaart)</p>
+               
+                <p><strong>Email:</strong> <a href="mailto:needforcardetailing@gmail.com">needforcardetailing@gmail.com</a></p>
+            </div>
+
+            <div class="contact-info">
+                <h2>Locatie</h2>
+                <div class="location-container">
+                    <img src="images/locatie.png" alt="Locatie" class="location-thumbnail" onclick="openLightbox()">
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Stuur ons een bericht</h2>
+                <form action="mailto:needforcardetailing@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Naam:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Bericht:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Verstuur</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox voor de afbeelding -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img src="images/locatie.png" alt="Locatie Vergroot" class="lightbox-image">
+    </div>
+
+    <footer data-aos="fade-up">
+    
+        <p>&copy; 2024 NeedForCarDetailing.</p>
+        <br>
+        <a href="https://www.instagram.com/needforcardetailing/" target="_blank"></a>
+            <img src="images/insta.png" alt="Instagram Logo" style="width: 30px; height: 30px;">
+        </a>
+    </footer>
+    
+    <script src="libraries/aos.js"></script>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+    
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.navbar').classList.toggle('active');
+        }
+
+        function openLightbox() {
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

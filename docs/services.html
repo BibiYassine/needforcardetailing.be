@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onze Pakketten - NFCD</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="libraries/aos.css">
+
+</head>
+<body data-aos="fade-up"> 
+    <header>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="navbar" id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="over.html">Over Ons</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <h2>Services</h2>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services-section">
+            <h1>Onze Pakketten</h1>
+
+            
+            <div class="service-package">
+                <div class="package-description">
+                    <h2>Classic - €30</h2>
+                    <p>- Stofzuigen matten, vloer, zetels.</p>
+                    <p>- Ruiten reinigen.</p>
+                    <p>- Afstoffen.</p>
+                    <p>- Dashboard, deurpanelen en stuur behandelen met stoomreiniger.</p>
+                    <p>- Buitenkant wassen. </p>
+                    <p>- Duur: 30 minuten.</p>
+                    
+                </div>
+                <div class="slider" data-aos="fade-up">
+                    <img src="images/pakket1.png" alt="" class="slider-image">
+                    <img src="images/pakket12.png" alt="" class="slider-image">
+                </div>
+            </div>
+
+            <div class="service-package" data-aos="fade-up">
+                <div class="package-description">
+                    <h2>Refresh - €80</h2>
+                   <p>- Dieptereinigen van stoelen, matten, vloer.</p>
+                   <p>- Ruiten reinigen.</p>
+                   <p>- Afstoffen.</p>
+                   <p>- Dashboard, deurpanelen en stuur reinigen en met stoomreiniger behandelen.</p>
+                   <p>- Duur: 3 uur.</p>
+                </div>
+                <div class="slider" data-aos="fade-up">
+                    <img src="images/pakket2.png" alt="Pakket 2 Foto 1" class="slider-image">
+                    <img src="images/pakket22.png" alt="Pakket 2 Foto 2" class="slider-image">
+                </div>
+            </div>
+
+            <div class="service-package" data-aos="fade-up">
+                <div class="package-description">
+                    <h2>Diamond - €130</h2>
+                    <p>- Dieptereinigen van stoelen, matten, vloer.</p>
+                    <p>- Ruiten reinigen.</p>
+                    <p>- Afstoffen.</p>
+                    <p>- Dashboard, deurpanelen en stuur reinigen en met stoomreiniger behandelen.</p>
+                    <p>- Buitenkant wassen.</p>
+                    <p>- Wielen en velgen behandelen.</p>
+                    <p>- Motorruimte reinigen.</p>
+                    <p>- Lakbescherming aan brengen.</p>
+                    <p>- Duur: 6 uur.</p>
+                </div>
+                <div class="slider" data-aos="fade-up">
+                    <img src="images/pakket3.png" alt="Pakket 3 Foto 1" class="slider-image">
+                    <img src="images/pakket32.png" alt="Pakket 3 Foto 2" class="slider-image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer data-aos="fade-up">
+    
+        <p>&copy; 2024 NeedForCarDetailing.</p>
+        <br>
+        <a href="https://www.instagram.com/needforcardetailing/" target="_blank"></a>
+            <img src="images/insta.png" alt="Instagram Logo" style="width: 30px; height: 30px;">
+        </a>
+    </footer>
+    <script src="services.js"></script>
+    <script src="libraries/aos.js"></script>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+    
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        const sliders = document.querySelectorAll('.slider');
+        
+        sliders.forEach(slider => {
+            const images = slider.querySelectorAll('.slider-image');
+            let currentIndex = 0;
+            
+            function showNextImage() {
+                images[currentIndex].style.opacity = 0;
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].style.opacity = 1;
+            }
+            
+            setInterval(showNextImage, 3000); // Verander afbeelding elke 3 seconden
+        });
+    });
+    // services.js
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+    
+        menuToggle.addEventListener('click', function() {
+            navbar.classList.toggle('active');
+        });
+    });
+    
+    </script>
+   
+    
+    
+</body>
+</html>
