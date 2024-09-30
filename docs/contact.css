@@ -1,6 +1,7 @@
 /* Algemene opmaak */
 html, body {
     height: 100%;
+    width: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #1a1a1a;
@@ -11,6 +12,7 @@ html, body {
 h1{
     display: flex;
     justify-content: center;
+    margin-right: 10px;
 }
 h2{
     display: none;
