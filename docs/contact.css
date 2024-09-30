@@ -267,7 +267,9 @@ footer {
         display: flex;
         justify-content: center;
     }
-
+    .insta{
+        size: 100px;
+    }
     .navbar.active {
         display: flex;
     }

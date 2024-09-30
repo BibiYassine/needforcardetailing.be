@@ -176,6 +176,9 @@ footer {
     .about-image, .text-content {
         max-width: 100%; /* Zorg ervoor dat beide elementen niet groter zijn dan de breedte van het scherm */
     }
+    .insta{
+        size: 100px;
+    }
     h2 {
         position: relative;
         top: 10px; /* Verplaats het element 10px vanaf de bovenkant */

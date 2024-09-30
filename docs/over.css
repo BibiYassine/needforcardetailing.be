@@ -166,7 +166,9 @@ h2{
         display: block;
         margin: 0;
     }
-
+    .insta{
+        size: 100px;
+    }
     .navbar a {
         display: block;
         padding: 15px;
