@@ -263,7 +263,10 @@ footer {
         top: 60px; /* Zorg ervoor dat de navbar onder de hamburger menu komt */
         left: 0;
     }
-    
+    h1{
+        display: flex;
+        justify-content: center;
+    }
 
     .navbar.active {
         display: flex;
